@@ -3,6 +3,8 @@
 require 'yaml'
 require 'net/https'
 
+puts("Start: #{Time.now}")
+
 MYDNS_ENDPOINTS = {
   v4: 'https://ipv4.mydns.jp/login.html',
   v6: 'https://ipv6.mydns.jp/login.html',
@@ -34,3 +36,5 @@ config.each do |title, account|
     end
   end
 end
+
+puts("End: #{Time.now}")
