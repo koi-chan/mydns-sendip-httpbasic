@@ -1,0 +1,6 @@
+[Unit]
+Description=MyDNS.JP send IP address
+
+[Service]
+Type=oneshot
+ExecStart=/opt/mydns-sendip-httpbasic/sendip.rb
